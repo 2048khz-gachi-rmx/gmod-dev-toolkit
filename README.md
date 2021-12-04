@@ -67,4 +67,5 @@ If you don't have an admin mod handling ranks for you, you'll need to set yourse
 these have support for special waypoints: "spawn" will respawn the player  
 **`.give (player) [class]`** - tries to find a weapon with a matching classname and give it to the player (you if unspecified)  
 > _`.give 357` will give you a magnum; `.give weezerfan 357` will give weezerfan a magnum; `.give #all rpg` will give everyone an rpg_  
+
 // more needs documenting... //
