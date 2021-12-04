@@ -1,0 +1,21 @@
+[submodule "glib"]
+	path = glib
+	url = https://github.com/notcake/glib
+[submodule "gcompute"]
+	path = gcompute
+	url = https://github.com/notcake/gcompute
+[submodule "gcodec"]
+	path = gcodec
+	url = https://github.com/notcake/gcodec
+[submodule "vfs"]
+	path = vfs
+	url = https://github.com/notcake/vfs
+[submodule "gooey"]
+	path = gooey
+	url = https://github.com/notcake/gooey
+[submodule "luadev"]
+	path = luadev
+	url = https://github.com/Metastruct/luadev
+[submodule "EPOE"]
+	path = EPOE
+	url = https://github.com/Metastruct/EPOE
