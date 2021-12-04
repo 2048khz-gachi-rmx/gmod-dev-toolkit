@@ -39,3 +39,32 @@ _this will allow the server to send clientside errors and other neat stuff to th
 
 4) **[optional]**  
 Check out [luadev](https://github.com/Metastruct/luadev)'s installation guide: following through with it will allow you to execute lua files straight from your text editor
+
+## getting started
+If you don't have an admin mod handling ranks for you, you'll need to set yourself to superadmin rank, and you'll need to do this on every server startup. Get a proper admin mod if you don't wanna do that.  
+`aowl rank part_of_name superadmin` in the server console will do the trick.
+
+`epoe_login` in console to log into EPOE, if you were denied access at first. You can use `+epoe` for more customization.
+
+#### Lua commands:
+> Most commands support shortcuts: `me` will be your player object, `this` will be whatever you're looking at, `there` will be the position you're looking at, etc.  
+> Entities can be indexed by their entity index using `_0` (equivalent of Entity(0))  
+> Players and entities can be indexed by part of their name (eg `.p rub` will try to match a player with `rub` in their name or an entity with `rub` in their class name) 
+
+**`.l [code]`** - runs Lua code on the server (eg: `.l print(123)` will print 123 on the server)  
+**`.p [expression]`** - prints a value from the server (eg: `.p me` will print your player's table)  
+**`.lc [code]`** - runs Lua code on all clients (eg: `.lc RunConsoleCommand("kill")` will make everyone lowtiergod themselves)  
+**`.pc [code]`** - prints a value from all clients (eg: `.lc input.LookupKeyBinding(KEY_G)` will tell you everyone's binds on G)  
+**`.lm [code]`** - runs Lua code on you (eg: `.lm RunConsoleCommand("kill")` will lowtiergod you)  
+**`.tm [code]`** or **`.pm2 [code]`** - prints a value from your client (eg `.tm input` will print the contents of the `input` library)  
+**`.lsc [player] [code]`** - runs Lua code on just the matched player (eg `.lsc weezerfan RunConsoleCommand("kill")` will make someone with `weezerfan` in their name lowtiergod themselves)  
+**`.psc [player] [code]`** - prints a value from the matched player (eg `.psc weezerfan preferredAlbum` will return the global `preferredAlbum` variable on their client)  
+
+#### Admin abusing commands:
+**`.go/goto/owo/warp [entity]`** - teleports you to the matched entity  
+**`.tp`** - teleports you to where you're looking  
+**`.send [who] [where]`** - teleports the `who` entity to the `where` entity  
+these have support for special waypoints: "spawn" will respawn the player  
+**`.give (player) [class]`** - tries to find a weapon with a matching classname and give it to the player (you if unspecified)  
+> _`.give 357` will give you a magnum; `.give weezerfan 357` will give weezerfan a magnum; `.give #all rpg` will give everyone an rpg_  
+// more needs documenting... //
