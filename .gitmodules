@@ -19,3 +19,6 @@
 [submodule "EPOE"]
 	path = EPOE
 	url = https://github.com/Metastruct/EPOE
+[submodule "fast_addons"]
+	path = fast_addons
+	url = https://github.com/2048khz-gachi-rmx/fast_addons.git
