@@ -3,7 +3,7 @@ repository to quickly setup a gmod dev envinroment without cloning twenty indivi
 
 ## contains:
 
-GCompute and co. - by notcake
+GCompute and co. - by [notcake](https://github.com/notcake/)
 > [Gooey](https://github.com/notcake/gooey)     
 > [GLib](https://github.com/notcake/glib)       
 > [GCompute](https://github.com/notcake/gcompute)  
@@ -54,7 +54,7 @@ If you don't have an admin mod handling ranks for you, you'll need to set yourse
 **`.l [code]`** - runs Lua code on the server (eg: `.l print(123)` will print 123 on the server)  
 **`.p [expression]`** - prints a value from the server (eg: `.p me` will print your player's table)  
 **`.lc [code]`** - runs Lua code on all clients (eg: `.lc RunConsoleCommand("kill")` will make everyone lowtiergod themselves)  
-**`.pc [code]`** - prints a value from all clients (eg: `.lc input.LookupKeyBinding(KEY_G)` will tell you everyone's binds on G)  
+**`.pc [code]`** - prints a value from all clients (eg: `.pc input.LookupKeyBinding(KEY_G)` will tell you everyone's binds on G)  
 **`.lm [code]`** - runs Lua code on you (eg: `.lm RunConsoleCommand("kill")` will lowtiergod you)  
 **`.tm [code]`** or **`.pm2 [code]`** - prints a value from your client (eg `.tm input` will print the contents of the `input` library)  
 **`.lsc [player] [code]`** - runs Lua code on just the matched player (eg `.lsc weezerfan RunConsoleCommand("kill")` will make someone with `weezerfan` in their name lowtiergod themselves)  
